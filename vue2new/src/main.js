@@ -10,19 +10,20 @@ import Search from './components/Search'
 Vue.use(VueRouter)
 
 const routes = [{
-    path: '/',
-    component: Home
-},{
-    path: '/home',
-    component: Home
-},{
-    path: '/search',
-    component: Search
+  path: '/',
+  component: Home
+}, {
+  path: '/home',
+  component: Home
+}, {
+  path: '/search',
+  component: Search
 }]
-const router = new VueRouter( {
-    routes
+const router = new VueRouter({
+  routes
 })
+
 new Vue({
-    router,
-    ...App
+  router,
+  ...App
 }).$mount('#app')
